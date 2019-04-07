@@ -1,0 +1,21 @@
+p {
+    background-color: blue !important;
+}
+
+/* 100 */
+#text {
+    background-color: red;
+    font-size: 60px;
+}
+
+/* 12 */
+.text {
+    background-color: green;
+    font-size: 40px;
+}
+
+/* 1 */
+p {
+    background-color: yellow;
+    font-size: 22px;
+}
