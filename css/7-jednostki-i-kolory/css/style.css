@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.size-px{
+    width: 400px;
+    height: 200px;
+    background: rgb(114, 221, 114);
+}
+
+.size-pr {
+    width: 60%;
+    height: 200px;
+    background: greenyellow;
+}
+
+.size-vh {
+    width: 50vh;
+    height: 200px;
+    background: orange;
+}
+
+.size-vw{
+    position: relative;
+    top: -60px;
+    left: 60px:
+    width: 50vw;
+    height: 200px;
+    background: rgba(218, 98, 98, 0.6);
+}red
+
+/* em, rem */
+
+.em {
+    font-size: 30px;
+}
+
+.em p{
+    font-size: 2em;
+}
+
+.rem {
+    font-size: 3em;
+}
+
+.rem p{
+    font-size: 1rem;
+    /* 
+    1rem = 1 * font-size elementu html
+    2rem = 2 * font-size elementu html
+    itd
+    */
+
+}
