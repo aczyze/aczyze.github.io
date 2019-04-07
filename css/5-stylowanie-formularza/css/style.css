@@ -1,0 +1,51 @@
+* {
+    color:white
+}
+
+form {
+    background-color: #213b50;
+    padding: 25px;
+    width: 50%;
+}
+
+input,select,textarea {
+    background-color: #2b4a64;
+    padding: 4px;
+    border:1px solid;
+    border-color:  #2b4a64;
+    margin-bottom:10px;
+}
+
+label {
+    display:block;
+}
+
+[for="male"] {
+    display:inline-block;
+}
+
+[for="female"] {
+    display:inline-block;
+}
+
+input[type="submit"] {
+    background-color: green;
+    border-width: 0;
+    width: 70px;
+    height: 50px;
+    font-weight: bold;
+    font-size:20px;
+
+}
+
+input:focus {
+    background-color: #4e708c;
+}
+
+select:focus {
+    background-color: #4e708c;
+}
+
+textarea:focus {
+    background-color: #4e708c;
+}
