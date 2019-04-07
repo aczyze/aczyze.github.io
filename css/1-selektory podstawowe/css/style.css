@@ -1,0 +1,30 @@
+* {color:coral
+}
+
+#main-text {
+    color: blueviolet;
+    font-size: 26px;
+}
+
+.decor-text {
+    text-transform: uppercase;
+}
+
+div.decor-text {
+    color:crimson;
+    background-color: burlywood;
+}
+/* jeżeli chcemy zmienić kolor lików z niebieskiego, to muaimy to napisać na poziomie linku */
+ul li a{
+    margin-bottom: 20px;
+    color: black;
+}
+
+ul li.active {
+    font-size: 30px;
+}
+
+ul li.active + li{
+    margin-top: 60px;
+    font-style:italic;
+}
