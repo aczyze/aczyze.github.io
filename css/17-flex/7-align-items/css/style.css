@@ -18,6 +18,10 @@ Domyślne kolory 'flex-item' - START
     background-color: lightgray;
 /*    max-height: 150px;*/
 }
+
+.ordered-item h2{
+    font-size: 30px;
+}
 /* 
 ------------------------------------
 Domyślne kolory 'flex-item' - END
@@ -32,18 +36,18 @@ Domyślne kolory 'flex-item' - END
     display: flex;
     flex-wrap: wrap;
     height: 700px;
-    
+
     
 /*
     W przykładzie są 2 linie (wiersze) elementów.
     Wszystkie elementy ukladają się względem poziomej 
     osi we własnej linii (wierszu) :)
 */
-    align-items: stretch;    
-/*    align-items: center;*/
+    /* align-items: stretch;     */
+/*    align-items: center;
 /*    align-items: flex-start;*/
 /*    align-items: flex-end;*/
-/*    align-items: baseline*/
+    align-items: baseline;
 
 }
 

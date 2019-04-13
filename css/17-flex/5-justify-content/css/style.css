@@ -31,11 +31,11 @@ Domyślne kolory 'flex-item' - END
     border: 1px dashed red;
     display: flex;
     justify-content: flex-start;
-/*    justify-content: flex-end;*/
+    justify-content: flex-end;
 /*    justify-content: center;*/
 /*    justify-content: space-between;*/
 /*    justify-content: space-around;*/
-/*    justify-content: space-evenly;    */
+        justify-content: space-evenly;
 }
 
 

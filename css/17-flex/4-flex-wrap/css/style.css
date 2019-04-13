@@ -32,7 +32,7 @@ Domyślne kolory 'flex-item' - END
     display: flex;
     flex-wrap: nowrap;
 /*    flex-wrap: wrap;*/
-/*    flex-wrap: wrap-reverse;*/
+    flex-wrap: wrap-reverse;
 }
 
 

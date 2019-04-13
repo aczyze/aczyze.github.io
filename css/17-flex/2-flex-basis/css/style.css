@@ -11,12 +11,12 @@ Domyślne kolory 'flex-item' - START
     padding: 10px;
     margin: 3px;
     background-color: orange;
-/*    flex-basis: 10%;*/
+    flex-basis: 10%;
 }
 
 .flex-item:nth-last-of-type(odd) {
     background-color: lightgray;
-/*    flex-basis: 15%;*/
+    flex-basis: 15%;
 }
 /* 
 ------------------------------------
