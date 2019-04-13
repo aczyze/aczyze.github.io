@@ -1,0 +1,18 @@
+#strawberry-left {
+    float: left;
+}
+
+#strawberry-right {
+    float: right;
+}
+
+/* tego elementu none nie  mam w css */
+#strawberry { 
+    float: none ;
+}
+
+p:last-child {
+    background-color: yellow;
+    clear: both;
+    /* moze byc tez clear right i left */
+}

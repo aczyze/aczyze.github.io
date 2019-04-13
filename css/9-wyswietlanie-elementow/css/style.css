@@ -1,0 +1,32 @@
+#p1 {
+    background-color: blue;
+  }
+  
+  #p2 {
+    background-color: indianred;
+    }
+  
+  
+  #inline-elements p {
+    display: inline;
+  }
+  
+  #inline-p1 {
+    background-color: green;
+  }
+  
+  #inline-p2 {
+    background-color: pink;
+  }
+  
+  #inline-block-elements li {
+    display: inline-block;
+    width: 100px;
+    height: 30ox;
+    margin: 5px;
+    background-color: antiquewhite;
+  }
+  
+  #display-none {
+    display: none;
+  }
