@@ -19,8 +19,8 @@ Domyślne kolory 'flex-item' - START
 /*    max-height: 150px;*/
 }
 
-.ordered-item h2{
-    font-size: 30px;
+/* .ordered-item h2{ */
+    /* font-size: 30px;      propowalem to zeby zobaczyc baseline */
 }
 /* 
 ------------------------------------
