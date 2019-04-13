@@ -1,0 +1,29 @@
+/* trzeba ustawić font size=0 dlatego, że on czyta spacje między elementami figur, i zle odczytuje szerokosc */
+/* tu dla mobilefirst przydaloby sie jeszcze odwrocic min/max */
+@media (min-width:992px) {
+    figure {
+        width:33%;
+        border: 40px solid  #222;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:992px) {
+    figure {
+        width:49%;
+        border: 40px solid  #222;
+    }
+}
+
+@media (min-width:480px) and (max-width:768px) {
+    figure {
+        width:100%;
+        border: 40px solid  #222;
+    }
+}
+
+@media (max-width:480px) {
+    figure {
+        width:100%;
+    }
+}
