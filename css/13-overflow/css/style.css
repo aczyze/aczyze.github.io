@@ -1,0 +1,27 @@
+.box {
+    width: 300px;
+    height: 150px;
+    border: 1px solid red;
+    margin: 60px;
+}
+
+#visible {
+    overflow: visible;
+    color: green;
+}
+
+#hidden {
+    color: deeppink;
+    overflow: hidden;
+}
+
+#scroll {
+    color: orange;
+    overflow: scroll;
+}
+
+/* auto robi automatycznego scrolla, tylko tego któwy jest potrzebny */
+#auto {
+    color: darkmagenta;
+    overflow: auto;
+}
