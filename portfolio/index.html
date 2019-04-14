@@ -4,49 +4,72 @@
 <head>
   <meta charset="UTF-8">
   <title>Warsztaty - HTML5 w praktyce</title>
-  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
-
-  <nav id="menu">
-    <ul>
-      <li class="menu-item"><a href="#">Home</a></li>
-      <li class="menu-item"><a href="#about">O mnie</a></li>
-      <li class="menu-item"><a href="#contact">Kontakt</a></li>
-    </ul>
-  </nav>
-
-
   <header id="header">
-    <img src="img/header-background.jpg" alt="Zdjęcie nagłówkowe">
-    <h1 id="main-header-text">Moja własna strona</h1>
+    <h1 id="main-header-text">FRONT END DEVELOPER</h1>
+    <h2 id="sub-header-text">HTML &#8226; CSS &#8226; JavaScript</h2>
+    <a class="link_box" id="dowiedz_sie" href="#portfolio">DOWIEDZ SIĘ WIĘCEJ</a>
   </header>
 
+<nav id="menu">
+    <li class="menu-item"><a href="#about">O MNIE</a></li>
+    <li class="menu-item"><a href="#portfolio">PORTFOLIO</a></li>
+    <li class="menu-item"><a href="#contact">KONTAKT</a></li>
+</nav>
+
   <section id="about">
-    <h2 id="about-header">O mnie</h2>
-    <p class="about-content">Front-end developer i project manager. Odpowiadał za realizację wielu projektów webowych dla klientów w Polski i zagranicy. Występował jako prelegent na spotkaniach WordUp, gdzie opowiadał o możliwościach systemu WordPress CMS przy tworzeniu stron internetowych.
+    <h2 id="about-header">O MNIE</h2>
+      <img id="about_photo" src="img/about.jpg" alt="Zdjęcie nagłówkowe">
+    <p class="about-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, repudiandae? Sequi minus nostrum libero, expedita modi eos ea architecto, eveniet velit laboriosam omnis dicta iusto possimus ducimus fuga! Laborum, culpa?
     </p>
     
-    <p class="about-content"> Uważa, że każdy może zostać programistą, dlatego prowadzi warsztaty na uczelniach wyższych oraz w ramach projektu Codevenig, na których pokazuje jak funkcjonują współczesne strony internetowe.
+    <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error reprehenderit modi minima ipsum nisi, voluptate, dignissimos corrupti recusandae sapiente ratione laborum voluptas at! Praesentium expedita facere atque doloremque quaerat voluptates.
     </p>
+
+    <a class="link_box" id="moje_portfolio" href="#portfolio">ZOBACZ MOJE PORTFOLIO</a>
 
   </section>
 
+  <section id="portfolio">
+    <h2 id="portfolio-header">PORTFOLIO</h2>
+    <div id="portfolio_gallery">
+      <img class="portfolio_gallery_photo" src="img/portfolio/photo-1.jpg" alt="Zdjęcie nagłówkowe">
+      <img class="portfolio_gallery_photo" src="img/portfolio/photo-2.jpg" alt="Zdjęcie nagłówkowe">
+      <img class="portfolio_gallery_photo" src="img/portfolio/photo-3.jpg" alt="Zdjęcie nagłówkowe">
+      <img class="portfolio_gallery_photo" src="img/portfolio/photo-4.jpg" alt="Zdjęcie nagłówkowe">
+      <img class="portfolio_gallery_photo" src="img/portfolio/photo-5.jpg" alt="Zdjęcie nagłówkowe">
+      <img class="portfolio_gallery_photo" src="img/portfolio/photo-6.jpg" alt="Zdjęcie nagłówkowe">
+      <img class="portfolio_gallery_photo" src="img/portfolio/photo-7.jpg" alt="Zdjęcie nagłówkowe">
+      <img class="portfolio_gallery_photo" src="img/portfolio/photo-8.jpg" alt="Zdjęcie nagłówkowe">
+      <img class="portfolio_gallery_photo" src="img/portfolio/photo-9.jpg" alt="Zdjęcie nagłówkowe">
+      <img class="portfolio_gallery_photo" src="img/portfolio/photo-10.jpg" alt="Zdjęcie nagłówkowe">
+      <img class="portfolio_gallery_photo" src="img/portfolio/photo-11.jpg" alt="Zdjęcie nagłówkowe">
+      <img class="portfolio_gallery_photo" src="img/portfolio/photo-12.jpg" alt="Zdjęcie nagłówkowe">
+    </div>
+  </section>
 
-  <div id="contact">
-    <h2 id="contact-header">Kontakt</h2>
-    <address id="contact-content">
-      Łukasz Badocha<br /> 
-      ul. Mostowa 6/13<br /> 
-      31-061 Kraków<br />
-      <a href="mailto:l.badocha@arena108.pl">l.badocha@arena108.pl</a>
-    </adress>
-  </div>
+  <section id="contact">
+    <h2 id="contact-header">KONTAKT</h2>
+    <form  id="contact_form" action="https://formspree.io/aczyze@gmail.com" method="POST">
+        <input class="contact_info" type="text" required name="imie_nazwisko" placeholder="Imię i nazwisko">
+        <input class="contact_info" type="email" name="email" placeholder="Email">
+        <textarea class="contact_message" name="wiadomosc"></textarea>
+        <input class="link_box" type="submit" value="Send">
+    </form>
+
+  </section>
+
+  <footer>
+    Copyrigth Adaś
+  </footer>
 
 </body>
 
