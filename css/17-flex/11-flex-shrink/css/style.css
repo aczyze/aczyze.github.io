@@ -39,7 +39,7 @@ Czyli itemy są szersze o 20% niż kontener.
 Ustaw flex-shrink, aby zobaczyć jak item się zmniejsza :)
 */
 .ordered-item {
-/*    flex-shrink: 4;*/
+flex-shrink: 4;
 }
 
 

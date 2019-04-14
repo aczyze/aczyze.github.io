@@ -33,9 +33,9 @@ Domyślne kolory 'flex-item' - END
     display: flex;
     flex-wrap: wrap;
 }
-
+/* orer 2 wrzuca na koniec, 0 na poczatek a 1 po srodku */
 .ordered-item {
-/*    order: 2;*/
+    order: 2;
 }
 
 
