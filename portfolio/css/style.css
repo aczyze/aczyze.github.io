@@ -22,6 +22,16 @@ body {
     color: blue;
     
   }
+/* próba zrobienia podkreslenia tytulu */
+ /* h2::after{ 
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 1px;
+    bottom: 0;
+    border-bottom: 1px solid red;
+    margin: auto;
+    }*/
 
     .link_box {
     border: solid blue;
