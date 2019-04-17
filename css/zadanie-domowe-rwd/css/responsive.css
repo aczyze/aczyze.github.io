@@ -1,4 +1,4 @@
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-width:992px) {
     #header {
         background-image: url('../img/man-2.jpg');
         height: 70vh;
