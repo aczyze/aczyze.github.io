@@ -1,4 +1,4 @@
-@media (max-height:800px) {
+@media (max-height:400px) {
     #header {
         background-image: url('../img/man-2.jpg');
         height: 70vh;
