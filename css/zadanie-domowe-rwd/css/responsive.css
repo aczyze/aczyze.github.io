@@ -1,0 +1,51 @@
+@media (max-width:992px) {
+
+    }
+
+@media (min-width:992px) and (max-width:1170px) {
+    #header {
+        background-image: url('../img/man-2.jpg');
+        height: 70vh;
+    }
+
+    #header h1 {
+        text-align: end;
+        padding-top: 0px;
+        font-size: 40px;
+        color: white;
+    }
+
+    #header h2 {
+        text-align: end;
+        font-size: 40px;
+        color: white;
+    }
+
+
+}
+
+@media (min-width:1170px) {
+    #header {
+        height: 100vh;
+    }
+
+    #header h1 {
+        text-align: start;
+        padding-top: 40vh;
+        font-size: 40px;
+        color: white;
+    }
+
+    #header h2 {
+        text-align: start;
+        font-size: 40px;
+        color: white;
+    }
+
+}
+
+
+
+
+
+
