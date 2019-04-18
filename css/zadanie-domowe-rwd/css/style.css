@@ -2,11 +2,14 @@
     font-family: Verdana,Geneva,sans-serif; 
 }
 
+body {
+    margin:0;
+}
+
 #header {
     background-image: url('../img/man-1.jpg');
     background-size: cover;
     height: 50vh;
-    margin: -10px;
 }
 
 #header h1 {
