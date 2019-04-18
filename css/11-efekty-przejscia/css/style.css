@@ -1,12 +1,20 @@
+body {
+    background-color: black;
+    visibility: hidden;
+}
+
 .box {
     width: 150px;
     height: 150px;
     margin: 20px;
+    background-color: yellow;
+
 }
 
 #colors {
-    background-color: yellow;
-    transition: background-color 3s linear 1s;
+    visibility: visible;
+
+    transition: visiblity 0s linear 5s;
 }
 
 #colors:hover {
