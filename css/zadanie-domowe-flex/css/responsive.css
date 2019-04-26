@@ -5,13 +5,13 @@
   }
 
   @media all and (min-width:768px) and (max-width: 992px) {
-    .aside-1 {order: 3; flex-basis: 100%; } 
-    .main    {order: 1; flex-basis: 68%; }
-    .aside-2 {order: 2; flex-basis: 28%; }
+    .aside-1 {order: 3; flex-basis: 100%;} 
+    .main    {order: 1; flex-basis: 68%;}
+    .aside-2 {order: 2; flex-basis: 28%;}
   }
 
   @media all and (min-width:992px) {
-    .aside-1 { order: 1; flex-basis: 15%; } 
+    .aside-1 { order: 1; flex-basis: 15%;} 
     .main    { order: 2; flex-basis: 64%;}
     .aside-2 { order: 3; flex-basis: 15%;}
   }
