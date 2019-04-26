@@ -1,34 +1,40 @@
 .wrapper {
     display: flex;  
     flex-flow: row wrap;
-    font-weight: bold;
     text-align: center;
+    text-transform: uppercase;
+    color: white;
   }
   
   .wrapper > * {
-    padding: 10px;
-    flex: 1 100%;
+    padding: 1%;
   }
   
   .header {
     background: tomato;
+    flex-basis: 100%;
   }
   
   .footer {
-    background: lightgreen;
+    background: rgb(167, 99, 167);
+    order: 4; 
+    flex-basis: 100%;
   }
   
   .main {
     text-align: left;
     background: deepskyblue;
+    height: 200px;
   }
   
   .aside-1 {
-    background: gold;
+    background: green;
+    height: 200px;
   }
   
   .aside-2 {
-    background: hotpink;
+    background: pink;
+    height: 200px;
   }
   
   
