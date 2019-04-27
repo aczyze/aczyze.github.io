@@ -10,7 +10,7 @@ const PI=3.14;
 let promienDuzego = 10;
 let promienMalego = 5;
 
-//const vs let: const nie nadpiszemy, a let tak
+//const vs let: const nie nadpiszemy, a let tak i nie musimy powtarzac komendy let
 
 let poleDuzego = PI * promienDuzego * promienDuzego;
 
