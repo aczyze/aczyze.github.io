@@ -49,4 +49,3 @@ for (let osoba of jsonOsoby.osoby) {
 jsonOsoby.osoby.forEach( (osoba) => {
     console.log(osoba.oczy);
 });
-
