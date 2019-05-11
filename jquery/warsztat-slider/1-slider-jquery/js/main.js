@@ -10,7 +10,7 @@ $(() => {
         let indexCounter = 0
 
     // USTAWIAMY DYNAMICZNIE SZEROKOSC KONTENERA
-    slideShow.css('width', slideCount * 100 + '%'); // 
+    slideShow.css('width', slideCount * 100 + '%'); // chodzi o to zeby tu dostac stringa. Dzieki tej formule tutaj, mamy kontener ktoey wyjezdza odpowiednio daleko za marginesy
 
     // USTAWIAMY DYNAMICZNIE SZEROKOSC OBRAZKOW
     singleSlides.each(function(index) /*tu nie dziala strzalkowa*/ {
@@ -35,7 +35,7 @@ $(() => {
 
     });
 
-    function slide(newIndex) {
+    function slide(newIndex) { // do tej funkcji odwolanie jest powyzej, wiec newIndex = indexCounter - 1
         console.log(newIndex)
         if (newIndex < 0 || newIndex >= slideCount) {
             return; // return wychodzi z funkcji
@@ -45,6 +45,7 @@ $(() => {
         const currentTitle = $('.slide-caption').eq(newIndex);
         currentTitle.fadeOut();
 
+        //WZOR DO NASZEJ ANIMACJI, PRZESUWA CALY KONTENER W LEWO
         const marginLeft = newIndex * (-100) + '%'
 
         // WYWOLANIE ANIMACJI
