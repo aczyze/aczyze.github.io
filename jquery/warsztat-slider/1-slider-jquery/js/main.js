@@ -57,3 +57,6 @@ $(() => {
 })
 
 
+// jak zapetlic zeby chodzilo w kolko?
+
+// strona z gotowymi rozwiazaniami http://kenwheeler.github.io/slick/
