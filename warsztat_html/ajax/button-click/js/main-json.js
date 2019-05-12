@@ -1,24 +1,32 @@
-$(function() {
-    
-    let button = $('#daj');
+$(function () {
 
-    const getData= async () => {
+    //let clicked = false // to byla czesc proby zeby sie raz klikal
+    const getData = () => {
 
         $.getJSON(
-            "https://jsonplaceholder.typicode.com/users/1", 
-            function (data){
+            "https://jsonplaceholder.typicode.com/users/1",
+            response => {
 
-        const user = data;
-        const paragraf = $("p").add().appendTo( document.body );
+                const paragraf = $("<p>");
+                const user = response;
 
-        paragraf.html ( `
+                paragraf.html(`
         <span>User ID: ${user.id}</span><br/>
         <span>User NAME: ${user.name}</span><br/>
         <span>User WEBSITE: ${user.website}</span><br/>
         `);
 
-
+                $('#daj').after(paragraf);
+            });
     }
+    $('#daj').click(() => {
+        getData();
+        // if (!clicked) {
+        //     getData();
+        //     clicked = true;
+        // } else {
+        //     return;
+        // }
 
-    button.click(getData)
+    })
 });
