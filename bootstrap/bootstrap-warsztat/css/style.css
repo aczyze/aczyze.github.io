@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main-nav .navbar-brand {
+    color: white;
+}
+
+.nav-item .nav-link {
+    color: white;
+}
+
+.container {
+ background-image: url("../img/form-background.jpg");
+}
