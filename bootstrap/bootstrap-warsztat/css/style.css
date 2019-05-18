@@ -13,8 +13,40 @@
 }
 
 .head {
-    height: 70vh;
+    display: flex;
+    align-items: center;
+    height: 400px;
     width: 100%;
     background-size: 100%;
     background-image: url("../img/form-background.jpg");
+}
+
+[class^='head_form'] {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+[class^='head_text'] {
+    color: white;
+}
+
+.btn-submit {
+    background-color: orange;
+}
+
+[class^='btn'] {
+    background-color:orange;
+    border: none;
+    width: 100%;
+}
+
+.subhead {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+iframe {
+    width: 100%;
 }
