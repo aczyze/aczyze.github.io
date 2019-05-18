@@ -12,6 +12,9 @@
     color: white;
 }
 
-.container {
- background-image: url("../img/form-background.jpg");
+.head {
+    height: 70vh;
+    width: 100%;
+    background-size: 100%;
+    background-image: url("../img/form-background.jpg");
 }
