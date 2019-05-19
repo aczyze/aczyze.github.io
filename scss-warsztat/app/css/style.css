@@ -1,0 +1,16 @@
+* {
+  color: white; }
+
+.fa {
+  color: yellow; }
+
+.background {
+  height: 500px;
+  background-image: url("../img/background.png");
+  background-size: cover; }
+
+.zadzwon {
+  display: inline-flex; }
+
+.uni {
+  display: inline-flex; }

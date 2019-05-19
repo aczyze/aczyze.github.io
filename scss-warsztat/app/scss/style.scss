@@ -5,3 +5,25 @@
 @import 'layouts/general';
 
 @import 'components/form';
+
+* {
+    color: white;
+}
+
+.fa {
+    color:yellow;
+}
+
+.background {
+    height:500px;
+    background-image: url("../img/background.png");
+    background-size: cover;
+}
+
+.zadzwon {
+    display: $display_inline_flex;
+}
+
+.uni {
+    display: $display_inline_flex;
+}
