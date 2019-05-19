@@ -1,0 +1,40 @@
+@charset "UTF-8";
+html {
+  font-size: 16px; }
+
+body {
+  background: pink; }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.5rem; }
+
+.form {
+  padding: 3vh;
+  border: 1px solid #ccc;
+  /*.form&...*/ }
+  .form h2 {
+    font-size: 3rem; }
+  .form a {
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color: orange;
+    color: orange; }
+  .form__header {
+    background-color: green; }
+  .form__btn {
+    border-radius: 3px;
+    border: 1px solid #333;
+    background: orange; }
+    .form__btn:hover {
+      background-color: red; }
+    .form__btn--reset {
+      opacity: .4; }
+  .form__field {
+    padding: 6px;
+    border: 1px solid #000;
+    border-radius: 6px; }
+
+/* zagnieżdżanie (ten komentarz widoczny w css*/

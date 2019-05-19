@@ -1,0 +1,38 @@
+.form {
+    padding: $form-inner-spacing;
+    border: 1px solid $form-border-color;
+    h2 {
+        font-size: 3rem;
+    }
+
+    a {
+        @include resetLink(orange, 'xl');
+        //include moze byc podany bez argumentu 
+        // text-decoration: none;
+        // color: goldenrod;
+    }
+
+    /*.form&...*/
+    &__header {
+        background-color: green;
+    }
+
+    &__btn {
+        border-radius: 3px;
+        border: 1px solid #333;
+        background: orange;
+        &:hover {
+            background-color: red;
+        }
+        &--reset {
+            opacity: .4;
+        }
+
+    }
+
+    &__field {
+        padding: 6px;
+        border: 1px solid #000;
+        border-radius: 6px;
+    }
+}

@@ -1,0 +1,8 @@
+@mixin resetLink($color: yellow, $size: normal) {
+    @if $size != normal {
+        font-size: 40px;
+    }
+    text-decoration: underline;
+    text-decoration-color: $color;
+    color: $color;
+}
