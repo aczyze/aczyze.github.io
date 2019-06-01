@@ -5,6 +5,7 @@ import SetValuePanel from './SetValuePanel';
 class Counter extends Component {
 
     // co to jest ten super, jak zadziałały połączenia z przyciskiem??
+    //cos podobnego mozna sobie zrobic w czystym javascript (...props)
     constructor(props) {
         super(props);
 
@@ -22,7 +23,8 @@ class Counter extends Component {
     }
 
     setValue = (newValue) => {
-        this.setState({counterValue:newValue});
+        this.setState({counterValue:newValue}); //w ten sposob na pewno zaladuje sie w odpowiedniej kolejnosci
+        //this.state.counterValue=5;    ---    tak nie robić, chodzi o asynchronicznosc
     }
 
     resetValue = () => {
@@ -48,3 +50,4 @@ class Counter extends Component {
 }
 
 export default Counter;
+//ten export oznacza, ze element jest publiczny (musi byc default)
