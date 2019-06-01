@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 const UsersList = (props) => {
     //console.log(props.users);
@@ -8,7 +8,7 @@ const UsersList = (props) => {
 
         {/* map to wazna funcja, pozwala tu ziterowac z tablicy */}
         {props.users.map(currentUser =>
-            <li key={currentUser.id}>{currentUser.name}</li>
+            <li key={currentUser.id} onClick={() => props.removeUser(currentUser.id,currentUser.name)}>{currentUser.name}</li>
         )}
 
         </ul>
