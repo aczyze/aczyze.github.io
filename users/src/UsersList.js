@@ -1,12 +1,20 @@
 import React, {Component} from 'react';
 
 const UsersList = (props) => {
-    return <div>
-        <ul className="main-list">
-        <li>aaa</li>
-        </ul>
+    //console.log(props.users);
+    return (
 
-    </div>
+        <ul className="main-list">
+
+        {/* map to wazna funcja, pozwala tu ziterowac z tablicy */}
+        {props.users.map(currentUser =>
+            <li key={currentUser.id}>{currentUser.name}</li>
+        )}
+
+        </ul>
+    )
+
+  
 }
 
 
