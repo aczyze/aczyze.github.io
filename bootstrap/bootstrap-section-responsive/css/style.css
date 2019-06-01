@@ -10,6 +10,13 @@
     box-sizing: border-box;
   }
 
+.lower {
+    display: inline;
+    position:relative;
+    bottom:-3px;
+    vertical-align:bottom;
+}
+
   .separator_line {
     width: 70px;
     height: 3px;
