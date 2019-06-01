@@ -1,0 +1,58 @@
+
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    color:grey;
+
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  .separator_line {
+    width: 70px;
+    height: 3px;
+    /* https://stackoverflow.com/questions/19040121/unable-to-center-div-on-bootstrap-3 */
+    /* http://learnlayout.com/margin-auto.html */
+    /* nie pozwalal mi ustawic szerokosci bez margin auto */
+    margin: auto;
+    background-color: rgb(230, 229, 229);
+    margin-bottom: 20px;
+  }
+
+.row {
+    display: inline-flexbox;
+}
+
+div {
+    text-align: center;
+
+}
+
+div.wrapper {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+div.round{
+
+        display:inline-block;
+        font-size: 45px;
+        line-height: 70px;
+        background-color:rgb(230, 229, 229);
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+
+}
+
+h2 {
+    font-size: 20px;
+
+}
+
+i.fab {
+    color:orange;
+
+}
