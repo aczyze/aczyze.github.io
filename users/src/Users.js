@@ -34,12 +34,17 @@ import UsersList from './UsersList';
             users = users.filter(currentUser => {
                 if (currentUser.id !== id) return currentUser
             })
+            
+            //mozna wpisac dowolna nazwe zmiennej i napisac skrotem bez if'a:
+            // users = users.filter(adam => adam.name !== name)
+
             this.setState({users})//moze byc jedno users bo te elementy tak samo sie nazywaja
             // this.setState({users:users})
             //albo tak:
             // this.setState(prevState => {
             //     return ({users};)
             // })
+
         }
 
         render() {
