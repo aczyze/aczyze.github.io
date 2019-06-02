@@ -10,6 +10,7 @@
     box-sizing: border-box;
   }
 
+  /* https://stackoverflow.com/questions/1515873/shifting-a-piece-of-text-down-using-css */
 .lower {
     display: inline;
     position:relative;
