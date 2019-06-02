@@ -16,7 +16,9 @@ class Crypto extends Component {
         this.getData();
 
         setInterval(() => {
+            if (this.filterValue.value === ''){
             this.getData()
+            }
         },5000);
 
     }
@@ -67,7 +69,31 @@ class Crypto extends Component {
             })
     }
 
-//<i class="fab fa-bitcoin"></i>
+
+    onFilter = () => {
+        let value = this.filterValue.value.toUpperCase();
+        value = value.trim();
+
+        let currencies = this.state.currencies;
+
+        currencies = currencies.filter(i => {
+            return i.waluta.search(value) >-1
+            //if nie dzialal:
+            // if (i.waluta === value) return i;
+        });
+        
+        
+        this.setState({currencies:currencies})
+
+
+
+        //!!to poniżej nie działało bo trzeba prenieść do zmiennej
+        // this.filterValue = this.filterValue.value.trim();
+
+        // this.filterValue = this.filterValue.value.toLowerCase();
+
+    }
+
 
     render() {
         //console.log(this.state.users);
@@ -77,8 +103,16 @@ class Crypto extends Component {
             <h1 className="main-heading">If I were a rich man,
 Yubby dibby dibby dibby dibby dibby dibby dum.
 All day long I'd biddy biddy bum.</h1>
-            <input value={this.state.currName}/>
-            {/* <button onClick={this.addNewUser}>pick currency</button> */}
+
+
+            <input 
+                placeholder="Filter..."
+                ref={input => this.filterValue = input}
+                onChange={this.onFilter}
+            />
+
+
+
             <CryptoList currencies={this.state.currencies}/>
 
         </div>            

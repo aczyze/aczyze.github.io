@@ -42,6 +42,22 @@
   color:green;
 }
 
+.green::after {
+  content:'\2191';
+}
+
+.red {
+  color:red;
+}
+
+.red::after {
+  content:'\2193';
+}
+
 .blue {
   color:blue;
+}
+
+.blue::after {
+  content:'<->';
 }
