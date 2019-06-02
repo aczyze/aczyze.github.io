@@ -29,9 +29,8 @@
     margin-bottom: 20px;
   }
 
-h2 {
-    font-size: 20px;
-
+.btn-link {
+    color:rgb(255, 115, 0);
 }
 
 div {
