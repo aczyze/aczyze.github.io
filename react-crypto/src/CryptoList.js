@@ -3,19 +3,34 @@ import React from 'react';
 
 const CryptoList = (props) => {
     //console.log(props.users);
+
+
     return (
-
         
-        <ul className="crypto-list">
+        <div className="crypto-list">
 
-            <span>komponent dziecko</span>
+        {/* gdyby to byla klasa to dodatkowo this. */}
+        {props.currencies.map(currentRate =>
+            <p key={currentRate.waluta}>
+                <strong>Last rate: </strong>
+                <span className={currentRate.class}>{currentRate.lastRate}&nbsp;</span>
+                <span>{currentRate.waluta}&nbsp;</span>
+                <span>[{currentRate.symbol}]&nbsp;</span>
+            </p>
 
-        {/* map to wazna funcja, pozwala tu ziterowac z tablicy */}
-        {props.users.map(currentRate =>
-            <li key={currentRate.id}>{currentRate.name}</li>
         )}
 
-        </ul>
+        </div>
+
+        //Ponizej moje jako tako dzialalo
+            // <ul className="crypto-list">
+
+            // {/* map to wazna funcja, pozwala tu ziterowac z tablicy */}
+            // {props.currencies.map(currentRate =>
+            //     <li key={currentRate.waluta}><div>{currentRate.lastRate}</div> {currentRate.waluta} {currentRate.symbol}</li>
+            // )}
+
+            // </ul>
     )
   
 }

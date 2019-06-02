@@ -8,13 +8,17 @@ class Crypto extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            currName : '',
             currencies: []
         }
     }
     
     componentDidMount() {
         this.getData();
+
+        setInterval(() => {
+            this.getData()
+        },5000);
+
     }
 
     getData = () => {
@@ -22,22 +26,38 @@ class Crypto extends Component {
         axios.get('https://blockchain.info/pl/ticker')
             .then(response => {
                 let data = response.data;
+                let currenciesNew = [];
                 let currencies = this.state.currencies;
                 
                 data = Object.keys(data).map(waluta => {
-                    let object = {
+                    let newObject = {
                         waluta: waluta,
                         lastRate: data[waluta].last,
                         symbol: data[waluta].symbol
                     };
 
-                    currencies.push(object);
+
+                    //find znajdzie nam element bez podania numeru
+                    let oldObject = currencies.find(oldObject => {
+                        if (oldObject.waluta === newObject.waluta) return oldObject;
+                    });
+
+                    if (oldObject !== undefined) {
+                        if (oldObject.lastRate < newObject.lastRate) {
+                            newObject.class = 'green';
+                        } else if (oldObject.lastRate>newObject.lastRate) {newObject.class = 'red';
+                        } else { 
+                            newObject.class = 'blue';  
+                        }
+                    }
+
+                    currenciesNew.push(newObject);
                     //console.log(object);
 
                 });
 
-                this.setState({currencies:currencies})
-                console.log(this.state.currencies)
+                this.setState({currencies: currenciesNew})
+                //console.log(this.state.currencies)
 
 
             })
@@ -59,7 +79,7 @@ Yubby dibby dibby dibby dibby dibby dibby dum.
 All day long I'd biddy biddy bum.</h1>
             <input value={this.state.currName}/>
             {/* <button onClick={this.addNewUser}>pick currency</button> */}
-            <CryptoList users={this.state.currencies}/>
+            <CryptoList currencies={this.state.currencies}/>
 
         </div>            
     }
