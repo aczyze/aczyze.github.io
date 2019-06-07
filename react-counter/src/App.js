@@ -13,8 +13,8 @@ render() {
         <Heading headingText="Aplikacja"/>
         <Counter initValue={33} />
 
-        <Heading headingText="Aplikacja v2"/>
-        <Counter initValue={105} />
+        {/* <Heading headingText="Aplikacja v2"/>
+        <Counter initValue={105} /> */}
 
     </div>
   );
