@@ -5,8 +5,9 @@ import React from 'react';
 
 
         return (<div className="set-value-panel">
-            <input type="number" ref={input => objInput = input}></input>
-            <button onClick={()=>{props.setStep(parseInt(objInput.value))}}>Ustaw x</button>
+            x: 
+            <input type="number" ref={input => objInput = input} onChange={()=>{props.setStep(parseInt(objInput.value))}}></input>
+            {/* <button onClick={()=>{props.setStep(parseInt(objInput.value))}}>Ustaw x</button> */}
 
         </div>
         );
